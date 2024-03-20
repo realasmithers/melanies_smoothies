@@ -4,9 +4,12 @@ from snowflake.snowpark.functions import col
 
 # Write directly to the app
 st.title("My Parents Healthy New Diner")
-st.write("Choose the fruits you want in your Smoothie.")
+st.header("Breakfast Menu")
+st.write("Omega 3 & Blueberry Oatmeal")
+st.write("Kale, Spinach & Rocket Smoothie")
+st.write("Hard-Boiled Free-Range Egg")
 
-name_on_order = st.text_input('Name on Smoothie')
+""" name_on_order = st.text_input('Name on Smoothie')
 st.write('Name on your order will be:', name_on_order)
 
 cnx = st.connection("snowflake")
@@ -41,4 +44,4 @@ if ingredient_list:
 
     if time_to_insert:
         session.sql(my_insert_stmt).collect()
-        st.success('Your Smoothie is ordered, ' + name_on_order + '!', icon="✅")
+        st.success('Your Smoothie is ordered, ' + name_on_order + '!', icon="✅") """
